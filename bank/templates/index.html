@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Details</title>
+
+    <script type="text/javascript" src="/static/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="row" id="HeaderRow">
+			<p style="text-align: center;" id="HeaderText">Backend Coding Test</p>
+		</div>
+	</header>
+	<div class="MainBody">
+        <div class="modalBody">
+		    <div  class="modal-content" id="ModalContent">
+                <div class="modal-header" style="text-align: center">
+                    <span class="close">&times;</span>
+                    <h2>User Guide!</h2>
+                </div>
+                <div class="modal-body" style="text-align: center">
+
+                    <p>Welcome to this single page application.</p>
+                    <p>The page is divided into two sections,</p>
+                    <p>The left section has the functionality of searching any bank with its IFSC code,</p>
+                    <p>And the right section has the functionality of displaying information about all the branches of a bank in a particular city.</p>
+                </div>
+                <div class="modal-footer" style="text-align: center">
+                    <h3>Have fun using the app!</h3>
+                </div>
+            </div>
+        </div>
+			<div class="col-sm-6" id="Search1" style="float: left">
+				<div class="Container1" style="text-align: center">
+				<input type="text" name="IFSCSearch" id="IFSCBox" placeholder="Enter the IFSC Code">
+				<button type="submit" id="submit1" onclick="ifscapi()"><i id="sub1" class="fa fa-search"></i></button>
+				</div>
+                <div class="ResultContainer1">
+                    <ul id="IFSCResult" style="list-style: none">
+
+                    </ul>
+                </div>
+			</div>
+			<div class="col-sm-6" id="Search2" style="float: right">
+				<div class="Container2" style="text-align: center;">
+				<div class="Search2Div1">
+				<input type="text" name="BankName" id="BankBox" placeholder="Enter the bank name">
+				<input type="text" name="City" id="CityBox" placeholder="Enter the city">
+				<button type="submit" id="submit2" onclick="banknameapi()"><i id="sub2" class="fa fa-search"></i></button>
+				</div>
+                </div>
+                <div class="ResultContainer2">
+                    <ul id="BankResult" style="list-style: none;">
+
+                    </ul>
+                </div>
+			</div>
+		
+	</div>
+	<footer>
+		<div class="row" id="FooterRow">
+			<p style="text-align: center;" id="FooterText1">Designed and developed by: <span style="text-align: center;" id="AuthorName" >Ankit Raj</span></p>
+		</div>
+	</footer>
+    <link rel="stylesheet" href="/static/index.css">
+    <script type="text/javascript" src="/static/index.js"></script>
+
+</body>
+</html>

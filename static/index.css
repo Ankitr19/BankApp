@@ -1,0 +1,157 @@
+input:focus{
+	outline: none; !important;
+}
+
+#HeaderRow{
+	background-color: #64B5F6;
+	height : 50px;
+	border : 2px solid lightgrey;
+	border-radius: 8px;
+}
+#HeaderText{
+	color: ghostwhite;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 30px;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#FooterRow{
+	background-color: #64B5F6;
+	height : 50px;
+	border : 2px solid lightgrey;
+	border-radius: 8px;
+}
+#FooterText1{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 20px;
+	color: ghostwhite;
+}
+#AuthorName{
+	font-size: 20px;
+	color: ghostwhite;
+}
+.MainBody{
+	margin-top: 10px;
+	border : 2px solid lightgrey;
+	border-radius: 8px;
+}
+#MainBodyRow{
+	height: 100%;
+	width: 100%;
+}
+#Search1{
+	background-color: ghostwhite;
+	border : 2px solid #64B5F6;
+	border-radius: 8px;
+}
+#Search2{
+	background-color: ghostwhite;
+	border : 2px solid #64B5F6;
+	border-radius: 8px;
+}
+#IFSCBox{
+
+	height: auto;
+	border : 2px solid grey;
+	border-radius: 8px
+}
+#BankBox{
+
+	height: auto;
+	border: 2px solid grey;
+	border-radius: 8px;
+}
+#CityBox{
+
+	height: auto;
+	border: 2px solid grey;
+	border-radius: 8px;
+}
+.Container1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Container2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.SearchDiv2{
+	margin-top: 10px;
+}
+#submit1{
+	height: auto;
+	width: 10%;
+	background: lightgreen;
+	color: white;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 8px;
+	cursor: pointer;
+}
+#submit1:focus,
+#submit1:hover{
+	background: green;
+}
+#submit2{
+	height: auto;
+	width: 10%;
+	background: lightgreen	;
+	color: white;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 8px;
+	cursor: pointer;
+}
+#submit2:focus,
+#submit2:hover{
+	background: green;
+}
+.modal-header{
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+.modal-body{
+	padding: 2px 16px;
+}
+.modal-footer{
+
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+.modal-content{
+
+	z-index: 1;
+	position: absolute;
+	background-color: #fefefe;
+	margin-left: 10%;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+	from {top: -300px; opacity: 0}
+	to {top: 0;opacity: 1}
+}
+
+.close{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
